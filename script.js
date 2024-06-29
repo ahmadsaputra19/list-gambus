@@ -1,3 +1,48 @@
+//Search Dinamis
+document.getElementById("searchInput").addEventListener("input", function() {
+    var searchInput = this.value.trim().toLowerCase();
+    var resultsContainer = document.getElementById("searchResults");
+    resultsContainer.innerHTML = ""; // Clear previous results
+
+    if (searchInput === "") {
+        return; // Exit if the search input is empty
+    }
+
+    var divs = document.querySelectorAll(".content-div");
+
+    for (var i = 0; i < divs.length; i++) {
+        var div = divs[i];
+        var divId = div.getAttribute("id").toLowerCase();
+
+        if (divId.includes(searchInput)) {
+            var resultItem = document.createElement("div");
+            resultItem.textContent = divId;
+            resultItem.addEventListener("click", function() {
+                document.getElementById(this.textContent).scrollIntoView({ behavior: 'smooth' });
+            });
+            resultsContainer.appendChild(resultItem);
+        }
+    }
+});
+
+//Search V2
+// function searchDiv() {
+//     var searchInput = document.getElementById("searchInput").value.trim().toLowerCase();
+//     var divs = document.querySelectorAll(".content-div");
+
+//     for (var i = 0; i < divs.length; i++) {
+//         var div = divs[i];
+//         var divId = div.getAttribute("id").toLowerCase();
+
+//         if (divId.includes(searchInput)) {
+//             div.scrollIntoView({ behavior: 'smooth' });
+//             return;
+//         }
+//     }
+//     alert("Judul Yang Anda Masukkan Belum Tersedia :)");
+// }
+
+
 //To-top
 const toTopBtn = document.querySelector('.move-top');
 

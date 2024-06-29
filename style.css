@@ -1,365 +1,384 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Scheherazade+New:wght@400;500;600;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'arial', sans-serif;
 }
 
 @font-face {
-    font-family: 'ScheherazadeNew-Medium';
-    src: url('./ScheherazadeNew-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'ScheherazadeNew-Medium';
+  src: url('./ScheherazadeNew-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-  .scheherazade-new-medium {
-    font-family: "Scheherazade New", serif;
-    font-weight: 500;
-    font-style: normal;
-  }
+.scheherazade-new-medium {
+  font-family: 'Scheherazade New', serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
 body {
-    background-color: #010310;
-    color: #fff;
+  background-color: #010310;
+  color: #fff;
 }
 
 p {
-    color: #000;
+  color: #000;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-a{
-    color: #fff;
-    text-decoration: none;
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 section {
-    background-color: #080718;
-    margin: 0 220px;
+  background-color: #080718;
+  margin: 0 220px;
 }
 
+/* Header */
 header {
-    margin: 0 220px;
+  margin: 0 220px;
 }
 
 .navbar-nav {
-    justify-content: space-between;
-    background-color: #080718;
+  justify-content: space-between;
+  background-color: #080718;
 }
 
-.icon{
-    color: #fff;
+.icon {
+  color: #fff;
 }
 
-.icon li a img{
-    margin-top: -20px;
-    height: 65px;
+.icon li a img {
+  margin-top: -20px;
+  height: 65px;
 }
 
-.icon li a p:hover{
-    color: #DBD400;
-    transition: 0.3s ease-in-out;
+.icon li a p:hover {
+  color: #dbd400;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-list {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .list {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.list li{
-    margin-left: 25px;
+.list li {
+  margin-left: 25px;
 }
 
-.list li a:hover{
-    color: #DBD400;
-    transition: 0.3s ease-in-out;
+.list li a:hover {
+  color: #dbd400;
+  transition: 0.3s ease-in-out;
 }
 
-
+/* Dasboard Section */
 .container {
-    padding: 20px;
+  padding: 20px;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-.logo img{
-    height: 30px;
+.judul h2 {
+  color: #000;
+  font-family: 'Scheherazade New', serif;
+  font-family: 'ScheherazadeNew-Medium', sans-serif;
 }
 
-.judul h2{
-    color: #000;
-    font-family: 'Scheherazade New', serif;
-    font-family: 'ScheherazadeNew-Medium', sans-serif;
+.judul p {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 5vw;
 }
 
-.judul p{
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 5vw;
-}
-
-
-
-.option {
+/* .option {
     padding: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: start;
     gap: 10px;
-}
-
-.option a{
-    cursor: pointer;
-    border: 0.2px solid white;
-    border-radius: 10px;
-    padding: 5px;
-    width: 100%;
-    font-weight: bold;
-}
-
-.option a:hover{
-    background-color: #DBD400;
-    color: #010310;
-    transition: 0.2s ease-in-out;
-}
-
-/* .arab {
-  font-family: 'arab.ttf', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-size: 4vw;
 } */
 
+.option {
+  padding: 5px;
+  justify-items: end;
+}
+
+#searchInput {
+  border-radius: 10px;
+  height: 30px;
+  width: 250px;
+  margin-right: 5px;
+}
+
+.search-results {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.search-results div {
+  padding: 5px;
+  cursor: pointer;
+}
+.search-results div:hover {
+  background-color: #f0f0f0;
+}
+
+.option button {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  justify-items: center;
+}
+
+.option a {
+  cursor: pointer;
+  border: 0.2px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.option a:hover {
+  background-color: #dbd400;
+  color: #010310;
+  transition: 0.2s ease-in-out;
+}
+
+/* gambus option section */
 .option-btn {
-    margin: auto 25px;
+  margin: auto 25px;
 }
 
-.option-btn button:hover{
-    background-color: #DBD400;
-    color: #010310;
-    transition: 0.2s ease-in-out;
+.option-btn button:hover {
+  background-color: #dbd400;
+  color: #010310;
+  transition: 0.2s ease-in-out;
 }
 
-.arab p{
-    font-family: 'Scheherazade New', serif;
-    font-family: 'ScheherazadeNew-Medium', sans-serif;
-    font-size: 4vw;
-}
-
-.move-top {
-    cursor: pointer;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 30px;
-    right: 30px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: white;
-}
-
-.to-top {
-    width: 30px;
-    height: 30px;
-}
-
-.move-top:hover{
-    background-color: #DBD400;
-    transition: 0.3s ease-in-out;
+.arab p {
+  font-family: 'Scheherazade New', serif;
+  font-family: 'ScheherazadeNew-Medium', sans-serif;
+  font-size: 4vw;
 }
 
 /* kontak */
 #contact {
-    padding: 5rem;
-    background: #080718;
-    mask-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)50px);
-  }
-  .kontak-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .kontak-form h2 {
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .kontak-form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  .kontak-form input,
-  .kontak-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  .kontak-form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .kontak-form button:hover {
-    background-color: #218838;
-  }
-  
-  .kontak-form input,
-  .kontak-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  .kontak-form textarea {
-    resize: none; /* Prevent resizing */
-    height: 150px; /* Set a fixed height */
-    overflow-y: auto; /* Add vertical scrollbar when needed */
-  }
-  .kontak-form form .kirim {
-    background-color: #010310;
-  }
-  .kontak-form form .kirim:hover{
-    background-color: #48aaf4;
-    transition: 0.3s ease-in-out;
-  }
-  
+  padding: 5rem;
+  background: #080718;
+  mask-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 50px);
+}
+.kontak-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.kontak-form h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.kontak-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.kontak-form input,
+.kontak-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.kontak-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.kontak-form button:hover {
+  background-color: #218838;
+}
+
+.kontak-form input,
+.kontak-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.kontak-form textarea {
+  resize: none; /* Prevent resizing */
+  height: 150px; /* Set a fixed height */
+  overflow-y: auto; /* Add vertical scrollbar when needed */
+}
+.kontak-form form .kirim {
+  background-color: #010310;
+}
+.kontak-form form .kirim:hover {
+  background-color: #48aaf4;
+  transition: 0.3s ease-in-out;
+}
+
 /* Footer */
 .about-social {
-    width: 100%;
-    padding: 2rem;
-  }
-  
-  .about-social h3 {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-  
-  .about-social p {
-    font-weight: medium;
-    margin-bottom: 10px;
-  }
-  
-  .media-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .media-icon a {
-    display: flex;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-right: 9px;
-    /* background: #02504a; */
-    background: white;
-    border-radius: 100%;
-  }
-  
-  .media-icon a:hover {
-    background: yellow;
-    transform: scale(1.3);
-    transition: 0.3s ease;
-  }
-  
+  width: 100%;
+  padding: 2rem;
+}
 
+.about-social h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.about-social p {
+  font-weight: medium;
+  margin-bottom: 10px;
+}
+
+.media-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-icon a {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 9px;
+  /* background: #02504a; */
+  background: white;
+  border-radius: 100%;
+}
+
+.media-icon a:hover {
+  background: yellow;
+  transform: scale(1.3);
+  transition: 0.3s ease;
+}
+
+.move-top {
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 30px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.to-top {
+  width: 30px;
+  height: 30px;
+}
+
+.move-top:hover {
+  background-color: #dbd400;
+  transition: 0.3s ease-in-out;
+}
 
 /* Responsive Breakpoint */
-@media (max-width: 1080px){
-    header {
-        margin: 0 150px;
-    }
-    section {
-        margin: 0 150px;
-    }
-    .option {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
+@media (max-width: 1080px) {
+  header {
+    margin: 0 150px;
+  }
+  section {
+    margin: 0 150px;
+  }
+  .option {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 }
-@media (max-width: 920px){
-    header {
-        margin: 0 60px;
-    }
-    .icon li a img{
-        height: 60px;
-        margin-top: -15px;
-    }
-    section {
-        margin: 0 60px;
-    }
-    .option {
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-    }
+@media (max-width: 920px) {
+  header {
+    margin: 0 60px;
+  }
+  .icon li a img {
+    height: 60px;
+    margin-top: -15px;
+  }
+  section {
+    margin: 0 60px;
+  }
+  .option {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 }
-@media (max-width: 576px){
-    header{
-        margin: 0 auto;
-    }
-    .icon li a img{
-        height: 50px;
-        margin-top: -10px;
-    }
-    .list li{
-        margin-left: 10px;
-    }
-    section {
-        margin: 0 auto;
-    }
-    .option {
-        grid-template-columns: 1fr 1fr;
-        gap: 5px;
-    }
-    .arab p{
-        font-size: 4vw;
-    }
-    #contact{
-        padding: 2rem;
-    }
-    .kontak-form{
-        max-width: 720px;
-    }
-    .logoSholawat {
-      bottom: 20px;
-      right: 20px;
-      height: 35px;
-      width: 35px;
-    }
-    .to-top {
-        width: 25px;
-        height: 25px;
-    }
+@media (max-width: 576px) {
+  header {
+    margin: 0 auto;
+  }
+  .icon li a img {
+    height: 50px;
+    margin-top: -10px;
+  }
+  .list li {
+    margin-left: 10px;
+  }
+  section {
+    margin: 0 auto;
+  }
+  .option {
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+  .arab p {
+    font-size: 4vw;
+  }
+  #contact {
+    padding: 2rem;
+  }
+  .kontak-form {
+    max-width: 720px;
+  }
+  .logoSholawat {
+    bottom: 20px;
+    right: 20px;
+    height: 35px;
+    width: 35px;
+  }
+  .to-top {
+    width: 25px;
+    height: 25px;
+  }
 }
