@@ -133,7 +133,12 @@ header {
   border-radius: 10px;
   height: 40px;
   width: 250px;
-  margin-right: 5px;
+  padding-left: 5px;
+}
+
+#searchInput::placeholder{
+  font-size: 15px;
+  margin-left: 5px;
 }
 
 .search-results {
@@ -352,7 +357,7 @@ header {
   section {
     margin: 0 60px;
   }
-  .option {
+  .option-list {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
@@ -371,7 +376,12 @@ header {
   section {
     margin: 0 auto;
   }
-  .option {
+  #searchInput {
+    border-radius: 5px;
+    width: 190px;
+    height: 30px;
+  }
+  .option-list {
     grid-template-columns: 1fr 1fr;
     gap: 5px;
   }
