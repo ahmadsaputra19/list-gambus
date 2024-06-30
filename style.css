@@ -123,9 +123,15 @@ header {
   justify-items: end;
 }
 
+.option p{
+  color: white;
+  margin-bottom: 2px;
+  font-size: 9px;
+}
+
 #searchInput {
   border-radius: 10px;
-  height: 30px;
+  height: 40px;
   width: 250px;
   margin-right: 5px;
 }
@@ -142,6 +148,13 @@ header {
 }
 .search-results div:hover {
   background-color: #f0f0f0;
+}
+
+.option-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 15px;
+  gap: 10px;
 }
 
 .option button {
