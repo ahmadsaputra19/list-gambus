@@ -83,6 +83,7 @@ header {
 }
 
 .list li a:hover {
+  font-weight: bold;
   color: #dbd400;
   transition: 0.3s ease-in-out;
 }
