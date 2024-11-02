@@ -36,15 +36,16 @@
           <div class="logo">
             <h1>Lagu Gambus</h1>
           </div>
+          <p>Jika Judul Lagu Tidak Muncul, Berarti Lirik Lagu Belum Tersedia!</p>
+          <input type="text" id="searchInput" placeholder="Masukkan Judul Lagu...">
+          <div id="searchResults" class="search-results"></div>
           <div class="option">
             <!-- <a href="#wahdana">Wahdana</a> -->
-            <p>Jika Judul Lagu Tidak Muncul, Berarti Lirik Lagu Belum Tersedia!</p>
-            <input type="text" id="searchInput" placeholder="Masukkan Judul Lagu...">
-            <div id="searchResults" class="search-results"></div>
             <!-- <button onclick="searchDiv()"><svg role="img" viewBox="-5 -5 35 35" xmlns="http://www.w3.org/2000/svg"><title>SearXNG</title><path d="m13.716 17.261 6.873 6.582L24 20.282l-6.824-6.536a9.11 9.11 0 0 0 1.143-4.43c0-5.055-4.105-9.159-9.16-9.159S0 4.261 0 9.316c0 5.055 4.104 9.159 9.159 9.159a9.11 9.11 0 0 0 4.557-1.214ZM9.159 2.773a6.546 6.546 0 0 1 6.543 6.543 6.545 6.545 0 0 1-6.543 6.542 6.545 6.545 0 0 1-6.542-6.542 6.545 6.545 0 0 1 6.542-6.543ZM7.26 5.713a4.065 4.065 0 0 1 4.744.747 4.064 4.064 0 0 1 .707 4.749l1.157.611a5.376 5.376 0 0 0-.935-6.282 5.377 5.377 0 0 0-6.274-.987l.601 1.162Z"/></svg></button> -->
             <div class="option-list">
               <a href="#adikku sayang / khitanan">Adikku Sayang / Khitanan</a>
               <a href="#ahlil layali">Ahlil Layali</a>
+              <a href="#alal musthofa">Alal Musthofa</a>
               <a href="#ala maqdar">Ala Maqdar</a>
               <a href="#ana laulak">Ana Laulak</a>
               <a href="#asyqul ghorom (suluk)">Asyqul Ghorom (SULUK)</a>
@@ -80,6 +81,7 @@
               <a href="#pengantin baru">Pengantin Baru</a>
               <a href="#qoddukal mayyas">Qoddukal Mayyas</a>
               <a href="#robbi faj'al mujtama'na">Robbi Faj'al Mujtama'na</a>
+              <a href="#roqqot 'aina">Roqqot 'Aina</a>
               <a href="#sajadah merah">Sajadah Merah</a>
               <a href="#salamin baid">Salamin Baid</a>
               <a href="#salamun salamun">Salamun Salamun</a>
@@ -143,6 +145,24 @@
             <p>حَتَّافُأَدِيْ فِيْ لْأَشْكِي حَامْ ۝ حَلِى يَحَالِى وَصْرَابَّسَّمْ</p>
             <p>خُطْوَابِى خُطْوَاوَنَّسْمَاخِلْوَا ۝ نَهْوَاوِنَهْوَاوَتَعْتِيْ نَانِسْوَا</p>
             <p>نَتْمَتَاسَّاعَ دُبُرِّيْذِالْعَا ۝ حَلِى يَحَالِى وَصْرَابَّسَّمْ</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="alal musthofa" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#alalmusthofa" aria-expanded="false" aria-controls="#alalmusthofa">ALAL MUSTHOFA</button>
+      <div class="collapse" id="alalmusthofa">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <p>عَلَى اْلـمُصْطَفى</p>
+            </div>
+            <p>اللهُمَّ صَلِّ عَلَى اْلـمُصْطَفى ۝ اِمَامِ اْلعُلُوْمِ وَبَحْرِ اْلوَفَا</p>
+            <p>نَبِيٌّ تَسِيْرُ اْلمَحَامِلْ اِلَيْه ۝ رَسُوْلٌ تُشَدُّ الرِّحَالْ اِلَيْه</p>
+            <p>وَحَتَّى الشَّفَاعَةْ اُهْدِيَتْ اِلَيْه ۝ يَا حَضِيْرِنَا جَمِيْعًا صَلُّوْا عَلَيْه</p>
+            <p>نَبِيٌّ مُؤَيَّدْ رَسُولٌ مُمَجَّد ۝ يَا حَاضِرِينَ جَمِيعاً صَلُّوا عَلَيْه</p>
+            <p>نَبِيٌّ كَرِيمٌ ذُو خُلُقٍ عَظِيمٌ ۝ رَؤُوفٌ رَحِيمٌ وَالله عَلِيمٌ قَدْ صَلَّى عَلَيه</p>
+            <p>نَبِيٌ مُعَظَّم رَسُولٌ مُكَرَّم ۝ ذُو قَدْرٍ مُفَخَّم صَلَّى الله وَسَلَّم وَبَارَك عَلَيْه</p>
           </div>
         </div>
       </div>
@@ -471,7 +491,7 @@
             <p>قُلِّى مَتَى قُلِّى يَاسِيْدَ الْمَظَانِى
               <br>gulli mata gulli ya sidhil magholi
             </p>
-            <p>
+            <br><p>
               قُلِّى مَتَى قُلِّى بَا تَعْطُفْ وَتَاتِيْ
               <br>Qulli mata qulli bata'tuf wa tati
             </p>
@@ -487,7 +507,7 @@
               قُلِّى مَتَى قُلِّى يَا سِيْدَ الْمَظَانِينْ
               <br>Qulli mata qulli ya sidal madzoni
             </p>
-            <p>
+            <br><p>
               اَلطَّيْف بِعُيُوْنِكْ مَلِّيْتَهْ بِنُوْرَكْ
               <br>Atthoif bi 'uyunik mallitah bi nurok
             </p>
@@ -503,7 +523,7 @@
               قُلِّى مَتَى قُلِّى يَاسِيْدَ الْمَظَانِى
               <br>Qulli mata qulli ya sidal madzoni
             </p>
-            <p>بَحْسُو نَنَاعَهْدِيْ وِنْتَاوِنَاعَبْدَةْ
+            <br><p>بَحْسُو نَنَاعَهْدِيْ وِنْتَاوِنَاعَبْدَةْ
               <br>bahsu nana ahdi winta wina abdad
             </p>
             <p>وَحُبِّيْ ذَاكَّاكِى مَحْمَاكَنَاصَدَّقْ
@@ -1253,6 +1273,31 @@
             <p>وَشَهِدْنَاحِيْنَ زُرْنَا ۝ مَاهُنَالِكَ مِنْ مَقَامِ</p>
             <p>حَضْرَةٌفِيْهَاعَرَفْنَا ۝ سِرَّتَصْرِيْفِ الْكَلَامِ</p>
             <p>سِرُّهَايَشْرَحُ مَعْنَى ۝ أُدْخُلُوْ هَابِسَلَامِ</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="roqqot 'aina" class="content-div"></div>
+      <button class="btn fw-bold btn-outline-secondary btn-sm w-100 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#roqqotaina" aria-expanded="false" aria-controls="#roqqotaina">ROQQOT 'AINA</button>
+      <div class="collapse" id="roqqotaina">
+        <div class="card card-body">
+          <div class="arab text-center">
+            <div class="judul">
+              <p>رَقَّتْ عَيْنَا</p>
+            </div>
+            <p>رَقَّتْ عَيْنَا يَ شَوْقًا ، وَلِطَيْبَةِ ذَرْفَتَ عِشْقًا</p>
+            <p>فَأَتَيْتُ إِلَى حَبِيْبِى ، فَاهْدَأْ قَلْبُ وَرِفْقًا</p>
+            <p>صَلِّى عَلَى مُحَمَّدْ</p>
+            <br><p>اَلسَّلَامُ عَلَيْكَ يَا رَسُوْلُ االله</p>
+            <p>اَلسَّلَامُ عَلَيْكَ يَا حَبِيْبِى يَا نَبِيَّ الله</p>
+            <p>اَلسَّلَامُ عَلَيْكَ يَا رَسُوْلُ االله</p>
+            <p>اَلسَّلَامُ عَلَيْكَ يَا حَبِيْبِى يَا نَبِيَّ الله</p>
+            <p>يَا رَسُوْلُ االله</p>
+            <br><p>قَلْبٌ بِالْحَقِّ تَعَلَّقْ ، وَبِغَارِ حِرَاءَ تَأَلَّقْ</p>
+            <p>يَبْكِيْ يَسْأَلْ خَالِقَهُ ، فَأَتَاهُ الْوَحْيُ فَأَشْرَقْ</p>
+            <p>إِقْرَأْ إِقْرَأْ يَا مُحَمَّدْ</p>
+            <br><p>يَا طَيْبَةُ جِئْتُكِ صَبًّا ، لِرَسُوْلِ اللهِ مُحِبًّا</p>
+            <p>بِالرَّوُضَةِ سَكَنَتْ رُوْحِيْ ، وَجِوَارِ اَلْهَادِيْ مُحَمَّدْ</p>
           </div>
         </div>
       </div>
