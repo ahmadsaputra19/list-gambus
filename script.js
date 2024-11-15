@@ -76,3 +76,16 @@ document.getElementById('whatsapp-form').addEventListener('submit', function(eve
     
     window.open(whatsappURL, '_blank');
 });
+
+// Mencegah aksi copy
+document.addEventListener('copy', function(e) {
+    e.preventDefault();
+    alert('Teks tidak bisa dicopy!');
+});
+  
+// Mencegah klik kanan
+document.addEventListener('contextmenu', function(e) {
+e.preventDefault();
+// alert('Klik kanan dinonaktifkan!');
+});
+  
